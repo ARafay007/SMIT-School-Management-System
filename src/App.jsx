@@ -1,7 +1,7 @@
 
 
 import { Routes, Route } from "react-router"
-import { Login, Dashboard, AddStudent } from "./pages"
+import { Login, Dashboard, AddTeacher, AddSubject} from "./pages"
 import Layout from "./components/Layout"
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/' element={<Layout />}>
           <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/addStudent' element={<AddStudent />} />
-
+                <Route path='/addTeacher' element={<AddTeacher />} />
+                <Route path='/addSubject' element={<AddSubject />} />
         </Route>
       </Routes>
     </>
