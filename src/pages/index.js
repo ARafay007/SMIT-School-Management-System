@@ -1,15 +1,14 @@
+import AddStudents from "./AddStudents";
+import Dashboard from "./Dashboard";
+import Login from "./Login";
+import CreateAccountPage from "./CreateAccountPage";
+import TeacherFoam from "./TeacherFoam";
 
-
-import Login from './Login';
-import Dashboard from './Dashboard';
-import AddStudent from './AddStudents';
-import AddSubject from './AddSubject';
-import AddTeacher from './AddTeacher';
 
 export {
-    Login,
     Dashboard,
-    AddStudent,
-    AddSubject,
-    AddTeacher,
+    Login,
+    AddStudents,
+    TeacherFoam,
+    CreateAccountPage,
 }

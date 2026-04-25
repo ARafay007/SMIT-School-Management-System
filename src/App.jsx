@@ -1,22 +1,26 @@
 
+import { Route, Routes } from 'react-router'
+import Layout from './Component/Layout'
+import { Dashboard, AddStudents,Login, CreateAccountPage, TeacherFoam} from './Pages/index'
+import StdRecord from './Pages/StdRecord'
 
-import { Routes, Route } from "react-router"
-import { Login, Dashboard, AddTeacher, AddSubject} from "./pages"
-import Layout from "./components/Layout"
-
-function App() {
+const App = () => {
   return (
     <>
       <Routes>
+        
         <Route path='/login' element={<Login />} />
-        <Route path='/' element={<Layout />}>
-          <Route path='/dashboard' element={<Dashboard />} />
-                <Route path='/addTeacher' element={<AddTeacher />} />
-                <Route path='/addSubject' element={<AddSubject />} />
-          <Route path='/addStudent' element={<AddStudent />} />
+        <Route path='/createAccount' element={<CreateAccountPage />} />
+
+        <Route path='/' element={<Layout />} >
+        <Route path='/teacherfoam' element={<TeacherFoam/>} />
+          <Route path='/Dashboard' element={<Dashboard />} />
+          <Route path='/studentRecord' element={<StdRecord/>} />
+          <Route path='/addStudent/:id?' element={<AddStudents />} />
         </Route>
       </Routes>
     </>
+
   )
 }
 
