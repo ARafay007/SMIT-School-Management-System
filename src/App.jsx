@@ -1,7 +1,7 @@
 
 import { Route, Routes } from 'react-router'
 import Layout from './Component/Layout'
-import { Dashboard, AddStudents,Login, CreateAccountPage, TeacherFoam} from './Pages/index'
+import { Dashboard, AddStudents,Login, CreateAccountPage, TeacherFoam} from './pages/index'
 import StdRecord from './Pages/StdRecord'
 
 const App = () => {

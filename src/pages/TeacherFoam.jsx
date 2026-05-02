@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addteacher } from '../Redux/Feature/Addteacher';
+import { addteacher } from '../redux/Feature/Addteacher';
 
 
 
